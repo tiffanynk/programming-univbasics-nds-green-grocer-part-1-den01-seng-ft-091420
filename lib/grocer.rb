@@ -5,7 +5,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-
+#receipt represents accumlator value. set to an empty array
   cart.reduce([]) do |receipt, piece| 
     item_in_receipt = find_item_by_name_in_collection(piece[:item], receipt)
 
